@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html class="scroll-smooth lang-zh" lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>吴丞 — 高级Java开发工程师 | 个人简历</title>
+<meta name="description" content="吴丞的个人简历：主攻企业级分布式系统架构，精通 Spring 全家桶与主流中间件，具备分布式事务、分库分表、SQL 优化实战经验，善用 AI 工具提效。Wu Cheng — Senior Java Engineer portfolio."/>
+<!-- Tailwind (Play CDN) -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "secondary": "#bc000a",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#e3e2e7",
+                    "tertiary-container": "#1a1b1f",
+                    "on-tertiary-fixed-variant": "#46464b",
+                    "on-secondary-fixed": "#410001",
+                    "surface-bright": "#f9f9fb",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#fffbff",
+                    "on-surface": "#1a1c1d",
+                    "on-secondary-fixed-variant": "#930005",
+                    "soft-border": "#E5E5E5",
+                    "on-background": "#1a1c1d",
+                    "surface-dim": "#d9dadc",
+                    "outline-variant": "#c4c7c7",
+                    "surface-variant": "#e2e2e4",
+                    "primary-container": "#1c1b1b",
+                    "surface-tint": "#5f5e5e",
+                    "on-tertiary-fixed": "#1a1b1f",
+                    "inverse-on-surface": "#f0f0f2",
+                    "outline": "#747878",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-container-low": "#f3f3f5",
+                    "pure-white": "#FFFFFF",
+                    "primary-fixed": "#e5e2e1",
+                    "on-surface-variant": "#444748",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#858383",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f9f9fb",
+                    "on-primary-fixed-variant": "#474646",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#e2e2e4",
+                    "surface-container-high": "#e8e8ea",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#ffdad5",
+                    "inverse-surface": "#2f3132",
+                    "tertiary-fixed-dim": "#c7c6cb",
+                    "primary": "#000000",
+                    "primary-fixed-dim": "#c9c6c5",
+                    "slate-gray": "#6E6E73",
+                    "onyx-black": "#0A0A0A",
+                    "power-red": "#FF3B30",
+                    "on-tertiary-container": "#848388",
+                    "secondary-fixed-dim": "#ffb4aa",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#000000",
+                    "surface": "#f9f9fb",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#c9c6c5",
+                    "surface-container": "#eeeef0",
+                    "secondary-container": "#e2241f"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+                },
+                "spacing": {
+                    "stack-lg": "3rem",
+                    "stack-md": "1.5rem",
+                    "gutter-grid": "1.5rem",
+                    "stack-sm": "0.5rem",
+                    "section-gap": "clamp(5rem, 10vw, 10rem)",
+                    "margin-page": "clamp(1.5rem, 5vw, 4rem)"
+                },
+                "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-xl": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "display-xl-mobile": ["Inter"],
+                    "bilingual-sub": ["Inter"],
+                    "headline-md": ["Inter"]
+                },
+                "fontSize": {
+                    "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                    "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                    "display-xl": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "900" }],
+                    "headline-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                    "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                    "display-xl-mobile": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "900" }],
+                    "bilingual-sub": ["14px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                    "headline-md": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                }
+            }
+        }
+    }
+</script>
+<style>
+    .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined';
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-style: normal;
+        line-height: 1;
+    }
+    /* ---------- Replicated Stitch animation primitives ---------- */
+    .tilt-card { transition: transform 0.1s ease, box-shadow 0.3s ease; transform-style: preserve-3d; }
+    .glow-pulse { animation: pulse-glow 2s infinite; }
+    @keyframes pulse-glow {
+        0% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.4); }
+        70% { box-shadow: 0 0 0 10px rgba(255, 59, 48, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); }
+    }
+    .hero-bg { background-image: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #0A0A0A 100%); }
+    .noise-bg {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    }
+    .skill-progress { transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1); }
+    .reveal-up { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .reveal-up.active { opacity: 1; transform: translateY(0); }
+    .project-card { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+    .project-card:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 30px 60px -15px rgba(0,0,0,0.1); }
+    .project-card:hover .project-image { transform: scale(1.05); }
+    .project-image { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+    .hover-reveal { opacity: 0; transform: translateY(10px); transition: all 0.3s ease; }
+    .project-card:hover .hover-reveal { opacity: 1; transform: translateY(0); }
+    .timeline-line { transition: height 1s cubic-bezier(0.4, 0, 0.2, 1); }
+    .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-4px) scale(1.01); box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1); }
+
+    /* ---------- Bilingual (.bi) emphasis flip for ZH/EN toggle ---------- */
+    .bi { display: flex; flex-direction: column; }
+    .bi-en { font-size: 1em; font-weight: inherit; line-height: inherit; letter-spacing: inherit; }
+    .bi-zh { font-size: 0.5em; font-weight: 400; opacity: 0.55; letter-spacing: 0; margin-top: 0.12em; }
+    html.lang-zh .bi-en { font-size: 0.5em; font-weight: 400; opacity: 0.55; letter-spacing: 0; margin-top: 0.12em; }
+    html.lang-zh .bi-zh { font-size: 1em; font-weight: inherit; line-height: inherit; letter-spacing: inherit; opacity: 1; margin-top: 0; }
+
+    /* ---------- Pure-language toggle: each mode shows only its language ---------- */
+    html.lang-zh .bi-en { display: none !important; }
+    html.lang-en .bi-zh { display: none !important; }
+    html.lang-zh .en-only { display: none !important; }
+    html.lang-en .zh-only { display: none !important; }
+
+    /* ---------- Mobile menu ---------- */
+    #mobile-menu { transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.3s ease; }
+    #mobile-menu.hidden-menu { transform: translateY(-12px); opacity: 0; pointer-events: none; }
+
+    /* ---------- P7 Modal ---------- */
+    #project-modal { transition: opacity 0.3s ease; }
+    #project-modal.hidden-modal { opacity: 0; pointer-events: none; }
+    #project-modal .modal-panel { transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); }
+    #project-modal.hidden-modal .modal-panel { transform: translateY(24px) scale(0.98); }
+
+    @media (prefers-reduced-motion: reduce) {
+        .reveal-up, .project-card, .project-image, .hover-lift, .skill-progress, .timeline-line, .tilt-card { transition: none !important; }
+        .glow-pulse { animation: none; }
+        .reveal-up { opacity: 1; transform: none; }
+    }
+    /* thin scrollbar inside modal */
+    .modal-scroll::-webkit-scrollbar { width: 8px; }
+    .modal-scroll::-webkit-scrollbar-thumb { background: #c4c7c7; border-radius: 8px; }
+</style>
+</head>
+<body class="bg-pure-white text-onyx-black font-body-lg antialiased selection:bg-power-red selection:text-pure-white overflow-x-hidden noise-bg">
+
+<!-- ============================ TOP NAVIGATION ============================ -->
+<nav class="fixed top-0 w-full z-50 bg-pure-white/90 backdrop-blur-md border-b border-soft-border shadow-sm">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-margin-page h-20">
+        <a href="#hero" class="text-headline-md font-headline-md font-black tracking-tighter text-primary scale-95 active:scale-90 transition-transform">
+            WU.CHENG
+        </a>
+        <!-- Desktop Nav -->
+        <ul class="hidden md:flex items-center gap-8">
+            <li><a data-nav="about"      data-i18n="nav.about"    class="nav-link text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase hover:bg-surface-container-low px-2 py-1 rounded" href="#about">About</a></li>
+            <li><a data-nav="skills"     data-i18n="nav.skills"   class="nav-link text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase hover:bg-surface-container-low px-2 py-1 rounded" href="#skills">Skills</a></li>
+            <li><a data-nav="projects"   data-i18n="nav.projects" class="nav-link text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase hover:bg-surface-container-low px-2 py-1 rounded" href="#projects">Projects</a></li>
+            <li><a data-nav="timeline"   data-i18n="nav.timeline" class="nav-link text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase hover:bg-surface-container-low px-2 py-1 rounded" href="#timeline">Timeline</a></li>
+            <li><a data-nav="contact"    data-i18n="nav.contact"  class="nav-link text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase hover:bg-surface-container-low px-2 py-1 rounded" href="#contact">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button id="lang-toggle" class="hidden md:flex items-center gap-2 text-label-caps font-label-caps text-on-surface-variant hover:text-primary transition-colors" aria-label="Toggle language">
+                <span class="material-symbols-outlined text-[18px]">language</span>
+                <span id="lang-label">ZH / EN</span>
+            </button>
+            <a href="#contact" class="bg-onyx-black text-pure-white px-6 py-3 rounded text-label-caps font-label-caps font-bold hover:bg-power-red transition-colors duration-300 scale-95 active:scale-90 flex items-center gap-2">
+                <span data-i18n="btn.build">Let's Build</span>
+            </a>
+            <button id="menu-btn" class="md:hidden text-primary" aria-label="Open menu">
+                <span class="material-symbols-outlined text-[28px]">menu</span>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Menu Panel -->
+    <div id="mobile-menu" class="hidden-menu md:hidden absolute top-20 left-0 w-full bg-pure-white border-b border-soft-border shadow-xl px-margin-page py-6 flex flex-col gap-1">
+        <a class="mobile-link text-on-surface-variant hover:text-primary text-headline-md font-headline-md py-3 border-b border-soft-border" href="#about">关于</a>
+        <a class="mobile-link text-on-surface-variant hover:text-primary text-headline-md font-headline-md py-3 border-b border-soft-border" href="#skills">技能</a>
+        <a class="mobile-link text-on-surface-variant hover:text-primary text-headline-md font-headline-md py-3 border-b border-soft-border" href="#projects">项目</a>
+        <a class="mobile-link text-on-surface-variant hover:text-primary text-headline-md font-headline-md py-3 border-b border-soft-border" href="#timeline">历程</a>
+        <a class="mobile-link text-on-surface-variant hover:text-primary text-headline-md font-headline-md py-3 border-b border-soft-border" href="#contact">联系</a>
+        <div class="flex items-center justify-between pt-4">
+            <button id="lang-toggle-m" class="flex items-center gap-2 text-label-caps font-label-caps text-on-surface-variant">
+                <span class="material-symbols-outlined text-[18px]">language</span><span id="lang-label-m">ZH / EN</span>
+            </button>
+            <a href="#contact" class="bg-onyx-black text-pure-white px-6 py-3 rounded text-label-caps font-label-caps font-bold" data-i18n="btn.build">一起构建</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+<!-- ============================ P1 · HERO ============================ -->
+<section class="hero-bg min-h-screen relative flex items-center justify-center px-margin-page overflow-hidden pt-20" id="hero">
+    <!-- Dramatic lighting overlays -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-pure-white/5 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-power-red/10 rounded-full blur-[120px]"></div>
+    </div>
+    <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center relative z-10 pt-20 pb-section-gap">
+        <!-- Typography Column -->
+        <div class="flex flex-col items-start gap-stack-md text-pure-white z-20">
+            <div class="inline-flex items-center gap-2 bg-surface-container-lowest/10 backdrop-blur-sm border border-pure-white/20 px-4 py-2 rounded-full">
+                <div class="w-2 h-2 rounded-full bg-power-red glow-pulse"></div>
+                <span class="text-label-caps font-label-caps tracking-widest text-pure-white" data-i18n="hero.status">随时待命</span>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-display-xl-mobile md:text-display-xl font-display-xl italic leading-none tracking-tighter">
+                <span class="bi block">
+                    <span class="bi-en">WU CHENG</span>
+                    <span class="bi-zh">吴丞</span>
+                </span>
+                </h1>
+            </div>
+            <div class="flex flex-col gap-1 border-l-2 border-power-red pl-4">
+                <h2 class="text-headline-md font-headline-md text-pure-white" data-i18n="hero.role">高级 Java 工程师</h2>
+                <h3 class="text-bilingual-sub font-bilingual-sub text-surface-variant/70" data-i18n="hero.subtitle">高级 Java 开发工程师 · 8 年经验</h3>
+            </div>
+            <p class="text-body-lg font-body-lg text-surface-variant/80 max-w-md mt-4">
+                主攻企业级分布式系统架构，精通 Spring 全家桶与主流中间件，具备分布式事务、分库分表、SQL 优化实战经验，善用 AI 工具提效。
+                <span class="block text-bilingual-sub font-bilingual-sub text-surface-variant/60 mt-2">Focused on enterprise distributed systems architecture — proficient in the full Spring stack and mainstream middleware (Redis / MySQL / RabbitMQ); hands-on with distributed transactions, sharding and SQL tuning, leveraging AI to boost efficiency.</span>
+            </p>
+            <a href="#projects" class="mt-8 bg-power-red text-pure-white px-8 py-4 text-label-caps font-label-caps tracking-widest hover:bg-pure-white hover:text-onyx-black transition-colors duration-300 flex items-center gap-3 group">
+                <span data-i18n="hero.cta">查看项目</span>
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+        <!-- 3D Stage / Image Placeholder -->
+        <div class="relative h-[420px] sm:h-[614px] lg:h-[819px] w-full flex items-center justify-center tilt-card group" id="hero-tilt">
+            <div class="absolute inset-0 bg-gradient-to-t from-onyx-black via-transparent to-transparent z-10 pointer-events-none"></div>
+            <img class="w-full h-full object-cover object-center scale-95 group-hover:scale-100 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0" alt="3D portrait of a modern software engineer" src="assets/hero.jpg"/>
+        </div>
+    </div>
+</section>
+
+<!-- Brief Intro / Philosophy -->
+<section class="py-section-gap px-margin-page bg-pure-white relative">
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-grid items-start">
+            <div class="md:col-span-4">
+                <h2 class="text-headline-lg font-headline-lg text-onyx-black leading-tight" data-i18n="intro.title">
+                    为影响力而生。
+                </h2>
+            </div>
+            <div class="md:col-span-8 flex flex-col gap-6">
+                <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+                    八年 Java 全栈开发经验，兼具扎实后端功底与独立前端能力，主攻企业级工业项目研发与团队交付。
+                    <span class="block text-bilingual-sub font-bilingual-sub text-slate-gray mt-2">8 years of full-stack Java development — solid backend fundamentals plus independent frontend capability; focused on enterprise-grade industrial projects and team delivery.</span>
+                </p>
+                <div class="flex gap-4 flex-wrap mt-4">
+                    <span class="bg-surface-container-low text-onyx-black px-4 py-2 text-label-caps font-label-caps border border-soft-border" data-i18n="about.tag1">Java 后端</span>
+                    <span class="bg-surface-container-low text-onyx-black px-4 py-2 text-label-caps font-label-caps border border-soft-border" data-i18n="about.tag2">系统架构</span>
+                    <span class="bg-surface-container-low text-onyx-black px-4 py-2 text-label-caps font-label-caps border border-soft-border" data-i18n="about.tag3">高并发</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ P2 · ABOUT ============================ -->
+<section class="max-w-7xl mx-auto px-margin-page mb-section-gap reveal-up" id="about">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-grid items-start">
+        <div class="lg:col-span-5 relative">
+            <h1 class="text-display-xl-mobile md:text-display-xl font-display-xl tracking-tighter leading-none mb-4 md:mb-0 relative z-10">
+                Bridging <br/><span class="text-slate-gray italic">Vision</span> &amp; <br/>Execution.
+            </h1>
+            <div class="hidden lg:block absolute -left-10 top-20 w-32 h-32 bg-surface-container-low rounded-full -z-10 mix-blend-multiply opacity-50 blur-2xl"></div>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-7 pt-2 md:pt-4">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="w-12 h-px bg-primary"></span>
+                <h2 class="text-label-caps font-label-caps uppercase tracking-widest text-slate-gray">
+                    <span class="bi"><span class="bi-zh">关于我</span><span class="bi-en">About Me</span></span>
+                </h2>
+            </div>
+            <div class="space-y-6 text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+                    <p>
+                        八年 Java 全栈开发经验，主攻开发企业工业级项目研发，覆盖 PHM、BTS、CRM、MES、HRS、ERP 等核心业务领域；多次主导单体架构重构与性能调优，将核心查询从 5s+ 降至毫秒级、跨系统对接效率提升十余倍。曾任开发组长带领 5 人团队，并熟练运用 Claude Code、Codex、WorkBuddy、Qoder 等 AI 工具高效交付。
+                    </p>
+                <div class="flex flex-wrap gap-3 mt-10 pt-6 border-t border-soft-border">
+                    <span class="inline-flex items-center gap-1.5 px-4 py-2 bg-surface-container-low rounded-full text-bilingual-sub font-bilingual-sub text-primary">
+                        <span class="w-2 h-2 rounded-full bg-power-red"></span> 团队管理 Team Lead
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-4 py-2 bg-surface-container-low rounded-full text-bilingual-sub font-bilingual-sub text-primary">
+                        <span class="w-2 h-2 rounded-full bg-onyx-black"></span> 架构设计 Architecture
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-4 py-2 bg-surface-container-low rounded-full text-bilingual-sub font-bilingual-sub text-primary">
+                        <span class="w-2 h-2 rounded-full bg-slate-gray"></span> 性能优化 Performance
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Image / Visual Anchor -->
+    <div class="mt-24 relative w-full h-[420px] md:h-[614px] bg-surface-container-low rounded-xl overflow-hidden group">
+        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Minimalist workspace with code and 3D wireframe" src="assets/about.jpg"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent pointer-events-none"></div>
+    </div>
+</section>
+
+<!-- ============================ P3 · SKILLS ============================ -->
+<section class="max-w-7xl mx-auto px-margin-page reveal-up" id="skills">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+        <div>
+            <h2 class="text-headline-lg font-headline-lg tracking-tight mb-2">
+                <span class="bi"><span class="bi-en">Technical Arsenal</span><span class="bi-zh">技术栈</span></span>
+            </h2>
+            <p class="text-bilingual-sub font-bilingual-sub text-slate-gray">
+                <span class="bi"><span class="bi-en">Core Competencies</span><span class="bi-zh">核心能力</span></span>
+            </p>
+        </div>
+        <div class="hidden md:flex gap-2">
+            <button class="w-10 h-10 rounded-full border border-soft-border flex items-center justify-center hover:bg-surface-container-low transition-colors text-primary" aria-label="Previous">
+                <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+            </button>
+            <button class="w-10 h-10 rounded-full bg-onyx-black text-pure-white flex items-center justify-center hover:bg-power-red transition-colors" aria-label="Next">
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+            </button>
+        </div>
+    </div>
+    <!-- Skills Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-grid">
+        <!-- Frontend -->
+        <div class="bg-surface-bright border border-soft-border rounded-xl p-8 hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group flex flex-col justify-between min-h-[320px]">
+            <div>
+                <div class="flex justify-between items-start mb-6">
+                    <span class="material-symbols-outlined text-[32px] text-primary group-hover:text-power-red transition-colors">code</span>
+                    <span class="text-label-caps font-label-caps text-slate-gray">01</span>
+                </div>
+                <h3 class="text-headline-md font-headline-md mb-1">Java 生态</h3>
+                <p class="text-bilingual-sub font-bilingual-sub text-slate-gray mb-8">
+                    <span class="bi"><span class="bi-en">Java / Frameworks</span><span class="bi-zh">Java 框架生态</span></span>
+                </p>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-label-caps font-label-caps mb-1"><span>Spring Cloud Alibaba</span><span class="text-slate-gray">95%</span></div>
+                        <div class="h-1 bg-surface-container-low w-full rounded-full overflow-hidden"><div class="h-full bg-power-red skill-progress w-0" data-width="95%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-label-caps font-label-caps mb-1"><span>Netty 网络通信</span><span class="text-slate-gray">85%</span></div>
+                        <div class="h-1 bg-surface-container-low w-full rounded-full overflow-hidden"><div class="h-full bg-onyx-black skill-progress w-0" data-width="90%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Backend -->
+        <div class="bg-surface-bright border border-soft-border rounded-xl p-8 hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group flex flex-col justify-between min-h-[320px] lg:translate-y-8">
+            <div>
+                <div class="flex justify-between items-start mb-6">
+                    <span class="material-symbols-outlined text-[32px] text-primary group-hover:text-power-red transition-colors">storage</span>
+                    <span class="text-label-caps font-label-caps text-slate-gray">02</span>
+                </div>
+                <h3 class="text-headline-md font-headline-md mb-1">数据存储</h3>
+                <p class="text-bilingual-sub font-bilingual-sub text-slate-gray mb-8">
+                    <span class="bi"><span class="bi-en">Database / Storage</span><span class="bi-zh">数据库与存储</span></span>
+                </p>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-label-caps font-label-caps mb-1"><span>MySQL / 分库分表</span><span class="text-slate-gray">90%</span></div>
+                        <div class="h-1 bg-surface-container-low w-full rounded-full overflow-hidden"><div class="h-full bg-power-red skill-progress w-0" data-width="90%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-label-caps font-label-caps mb-1"><span>ClickHouse 列式存储</span><span class="text-slate-gray">82%</span></div>
+                        <div class="h-1 bg-surface-container-low w-full rounded-full overflow-hidden"><div class="h-full bg-onyx-black skill-progress w-0" data-width="88%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Database (dark) -->
+        <div class="bg-onyx-black text-pure-white rounded-xl p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 group flex flex-col justify-between min-h-[320px]">
+            <div>
+                <div class="flex justify-between items-start mb-6">
+                    <span class="material-symbols-outlined text-[32px] text-pure-white group-hover:text-power-red transition-colors" style="font-variation-settings: 'FILL' 1;">hub</span>
+                    <span class="text-label-caps font-label-caps text-slate-gray">03</span>
+                </div>
+                <h3 class="text-headline-md font-headline-md mb-1">中间件 &amp; 消息</h3>
+                <p class="text-bilingual-sub font-bilingual-sub text-slate-gray mb-8">
+                    <span class="bi"><span class="bi-en">Middleware / MQ</span><span class="bi-zh">中间件与消息队列</span></span>
+                </p>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-label-caps font-label-caps mb-1"><span>RabbitMQ 消息</span><span class="text-slate-gray">85%</span></div>
+                        <div class="h-1 bg-primary-container w-full rounded-full overflow-hidden"><div class="h-full bg-power-red skill-progress w-0" data-width="85%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-label-caps font-label-caps mb-1"><span>Redis 缓存 / 集群</span><span class="text-slate-gray">88%</span></div>
+                        <div class="h-1 bg-primary-container w-full rounded-full overflow-hidden"><div class="h-full bg-pure-white skill-progress w-0" data-width="82%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- DevOps -->
+        <div class="bg-surface-bright border border-soft-border rounded-xl p-8 hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group flex flex-col justify-between min-h-[320px] lg:translate-y-8">
+            <div>
+                <div class="flex justify-between items-start mb-6">
+                    <span class="material-symbols-outlined text-[32px] text-primary group-hover:text-power-red transition-colors">memory</span>
+                    <span class="text-label-caps font-label-caps text-slate-gray">04</span>
+                </div>
+                <h3 class="text-headline-md font-headline-md mb-1">JVM &amp; 并发</h3>
+                <p class="text-bilingual-sub font-bilingual-sub text-slate-gray mb-8">
+                    <span class="bi"><span class="bi-en">JVM / Concurrency</span><span class="bi-zh">JVM 与并发</span></span>
+                </p>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-label-caps font-label-caps mb-1"><span>JVM 调优</span><span class="text-slate-gray">80%</span></div>
+                        <div class="h-1 bg-surface-container-low w-full rounded-full overflow-hidden"><div class="h-full bg-power-red skill-progress w-0" data-width="80%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-label-caps font-label-caps mb-1"><span>并发编程 JUC</span><span class="text-slate-gray">85%</span></div>
+                        <div class="h-1 bg-surface-container-low w-full rounded-full overflow-hidden"><div class="h-full bg-onyx-black skill-progress w-0" data-width="85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ P4 · PROJECTS ============================ -->
+<section class="max-w-7xl mx-auto px-margin-page pt-section-gap pb-section-gap" id="projects">
+    <header class="mb-20">
+        <h1 class="text-display-xl-mobile md:text-display-xl font-display-xl font-black mb-4" data-i18n="projects.title">
+            精选项目
+        </h1>
+        <p class="text-body-lg font-body-lg text-slate-gray max-w-2xl" data-i18n="projects.intro">精选项目展示：工程化界面与稳健系统</p>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-grid md:gap-x-12 md:gap-y-24">
+        <!-- Project 1 -->
+        <article class="project-card group relative bg-surface-container-lowest border border-soft-border rounded-xl overflow-hidden md:mt-16 flex flex-col h-full cursor-pointer" data-project="phm">
+            <div class="relative h-[400px] overflow-hidden bg-surface-container-low flex items-center justify-center">
+                <img class="project-image object-cover w-full h-full absolute inset-0 z-0" alt="Industrial IoT equipment monitoring dashboard" src="assets/p1.jpg"/>
+                <div class="absolute inset-0 bg-onyx-black/10 group-hover:bg-onyx-black/5 transition-colors z-10"></div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow bg-pure-white relative z-20">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-power-red"></span> 工业 IoT</span>
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">PHM</span>
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">微服务</span>
+                </div>
+                <h2 class="text-headline-md font-headline-md font-bold mb-1">工业设备健康检测平台 (PHM)</h2>
+                <p class="text-body-md font-body-md text-on-surface-variant mb-6 line-clamp-2">面向工厂设备健康管理的工业 IoT 微服务系统，实现产线设备实时数据采集、状态监测与告警处理；参与振动、声学分析算法与异常库匹配能力建设。</p>
+                <div class="mt-auto flex justify-between items-end border-t border-soft-border pt-4">
+                    <div class="flex flex-col"><span class="text-label-caps font-label-caps text-slate-gray mb-1" data-i18n="card.role">角色</span><span class="text-body-md font-bold text-onyx-black">告警服务核心开发者</span></div>
+                    <div class="hover-reveal text-power-red font-bold text-sm flex items-center gap-1"><span data-i18n="card.view">查看详情</span> <span class="material-symbols-outlined text-[16px]">arrow_forward</span></div>
+                </div>
+            </div>
+        </article>
+        <!-- Project 2 (dark) -->
+        <article class="project-card group relative bg-onyx-black border border-onyx-black rounded-xl overflow-hidden flex flex-col h-full cursor-pointer" data-project="bts">
+            <div class="relative h-[400px] overflow-hidden bg-primary-container flex items-center justify-center">
+                <img class="project-image object-cover w-full h-full absolute inset-0 z-0 opacity-80" alt="Luxury car configurator" src="assets/p2.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx-black to-transparent z-10"></div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow bg-onyx-black relative z-20 text-pure-white">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-inverse-surface text-pure-white px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-power-red"></span> 溯源</span>
+                    <span class="bg-inverse-surface text-pure-white px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">BTS</span>
+                    <span class="bg-inverse-surface text-pure-white px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">多租户</span>
+                </div>
+                <h2 class="text-headline-md font-headline-md font-bold mb-1 text-pure-white">动力蓄电池溯源管理平台系统(BTS)</h2>
+                <p class="text-body-md font-body-md text-surface-variant mb-6 line-clamp-2">为每块动力电池建立唯一"数字身份证"，覆盖原材料、生产、使用、返修、梯次利用到回收拆解全流程；主导单体架构重构，解决 5s+ 瓶颈，实现多租户化与多工厂统一代码管理，并对每日 30W+ 增长数据做冷热隔离与分表。</p>
+                <div class="mt-auto flex justify-between items-end border-t border-inverse-surface pt-4">
+                    <div class="flex flex-col"><span class="text-label-caps font-label-caps text-surface-variant mb-1" data-i18n="card.role">角色</span><span class="text-body-md font-bold text-pure-white">重构架构主导</span></div>
+                    <div class="hover-reveal text-power-red font-bold text-sm flex items-center gap-1"><span data-i18n="card.view">查看详情</span> <span class="material-symbols-outlined text-[16px]">arrow_forward</span></div>
+                </div>
+            </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="project-card group relative bg-surface-container-lowest border border-soft-border rounded-xl overflow-hidden md:mt-16 flex flex-col h-full cursor-pointer" data-project="crm">
+            <div class="relative h-[400px] overflow-hidden bg-surface-container-low flex items-center justify-center">
+                <img class="project-image object-cover w-full h-full absolute inset-0 z-0" alt="Healthcare analytics dashboard" src="assets/p3.jpg"/>
+                <div class="absolute inset-0 bg-onyx-black/5 group-hover:bg-onyx-black/0 transition-colors z-10"></div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow bg-pure-white relative z-20">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">CRM</span>
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">开票</span>
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">SAP集成</span>
+                </div>
+                <h2 class="text-headline-md font-headline-md font-bold mb-1">企业客户关系管理系统(CRM)</h2>
+                <p class="text-body-md font-body-md text-on-surface-variant mb-6 line-clamp-2">面向企业销售订单从价格到物流、增值税发票开具并与 SAP 自动对账；主导围绕核心开票业务的编码，统一开票入口并集成 SAP/OA/VAT/EAS/WMS 多方系统。</p>
+                <div class="mt-auto flex justify-between items-end border-t border-soft-border pt-4">
+                    <div class="flex flex-col"><span class="text-label-caps font-label-caps text-slate-gray mb-1" data-i18n="card.role">角色</span><span class="text-body-md font-bold text-onyx-black">核心开票业务主导</span></div>
+                    <div class="hover-reveal text-power-red font-bold text-sm flex items-center gap-1"><span data-i18n="card.view">查看详情</span> <span class="material-symbols-outlined text-[16px]">arrow_forward</span></div>
+                </div>
+            </div>
+        </article>
+        <!-- Project 4 -->
+        <article class="project-card group relative bg-surface-container-lowest border border-soft-border rounded-xl overflow-hidden flex flex-col h-full cursor-pointer" data-project="mes">
+            <div class="relative h-[400px] overflow-hidden bg-surface-container-low flex items-center justify-center">
+                <img class="project-image object-cover w-full h-full absolute inset-0 z-0" alt="Abstract data visualization" src="assets/p4.jpg"/>
+                <div class="absolute inset-0 bg-onyx-black/5 group-hover:bg-onyx-black/0 transition-colors z-10"></div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow bg-pure-white relative z-20">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">MES</span>
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">制造</span>
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">追溯</span>
+                </div>
+                <h2 class="text-headline-md font-headline-md font-bold mb-1">车间制造管理系统(MES)</h2>
+                <p class="text-body-md font-body-md text-on-surface-variant mb-6 line-clamp-2">为印刷包装企业打造的数字化工厂核心平台，打通订单下达到交付的全制造流程；主导工单全生命周期状态机设计，并构建覆盖原材料到成品的全链路双向追溯体系。</p>
+                <div class="mt-auto flex justify-between items-end border-t border-soft-border pt-4">
+                    <div class="flex flex-col"><span class="text-label-caps font-label-caps text-slate-gray mb-1" data-i18n="card.role">角色</span><span class="text-body-md font-bold text-onyx-black">工单架构主导</span></div>
+                    <div class="hover-reveal text-power-red font-bold text-sm flex items-center gap-1"><span data-i18n="card.view">查看详情</span> <span class="material-symbols-outlined text-[16px]">arrow_forward</span></div>
+                </div>
+            </div>
+        </article>
+        <!-- Project 5 -->
+        <article class="project-card group relative bg-surface-container-lowest border border-soft-border rounded-xl overflow-hidden md:mt-16 flex flex-col h-full cursor-pointer" data-project="hrs">
+            <div class="relative h-[400px] overflow-hidden bg-surface-container-low flex items-center justify-center">
+                <img class="project-image object-cover w-full h-full absolute inset-0 z-0" alt="Enterprise HR management system" src="assets/p5.jpg"/>
+                <div class="absolute inset-0 bg-onyx-black/5 group-hover:bg-onyx-black/0 transition-colors z-10"></div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow bg-pure-white relative z-20">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">HRS</span>
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">人力资源</span>
+                    <span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">二次开发</span>
+                </div>
+                <h2 class="text-headline-md font-headline-md font-bold mb-1">企业人力资源管理系统 (HRS)</h2>
+                <p class="text-body-md font-body-md text-on-surface-variant mb-6 line-clamp-2">为 50000+ 员工大型企业替换 Excel 与老旧系统，主导开发集成核心人力、组织、考勤、薪酬、绩效、招聘的综合 HR 系统，月度薪酬核算从 5 人/天 降至 1 人/天。</p>
+                <div class="mt-auto flex justify-between items-end border-t border-soft-border pt-4">
+                    <div class="flex flex-col"><span class="text-label-caps font-label-caps text-slate-gray mb-1" data-i18n="card.role">角色</span><span class="text-body-md font-bold text-onyx-black">核心模块主导</span></div>
+                    <div class="hover-reveal text-power-red font-bold text-sm flex items-center gap-1"><span data-i18n="card.view">查看详情</span> <span class="material-symbols-outlined text-[16px]">arrow_forward</span></div>
+                </div>
+            </div>
+        </article>
+        <!-- Project 6 (dark) -->
+        <article class="project-card group relative bg-onyx-black border border-onyx-black rounded-xl overflow-hidden flex flex-col h-full cursor-pointer" data-project="erp">
+            <div class="relative h-[400px] overflow-hidden bg-primary-container flex items-center justify-center">
+                <img class="project-image object-cover w-full h-full absolute inset-0 z-0 opacity-80" alt="ERP management system on Kingdee EAS" src="assets/p6.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx-black to-transparent z-10"></div>
+            </div>
+            <div class="p-8 flex flex-col flex-grow bg-onyx-black relative z-20 text-pure-white">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-inverse-surface text-pure-white px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">ERP</span>
+                    <span class="bg-inverse-surface text-pure-white px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">金蝶 EAS</span>
+                    <span class="bg-inverse-surface text-pure-white px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">二次开发</span>
+                </div>
+                <h2 class="text-headline-md font-headline-md font-bold mb-1 text-pure-white">ERP 管理系统</h2>
+                <p class="text-body-md font-body-md text-surface-variant mb-6 line-clamp-2">基于金蝶 EAS 二次开发，优化集团供应链、财务、生产制造核心流程；主导销售订单协同接口与 WMS 深度集成，消除信息孤岛，实现核心业务数据统一闭环管理。</p>
+                <div class="mt-auto flex justify-between items-end border-t border-inverse-surface pt-4">
+                    <div class="flex flex-col"><span class="text-label-caps font-label-caps text-surface-variant mb-1" data-i18n="card.role">角色</span><span class="text-body-md font-bold text-pure-white">二次开发主导</span></div>
+                    <div class="hover-reveal text-power-red font-bold text-sm flex items-center gap-1"><span data-i18n="card.view">查看详情</span> <span class="material-symbols-outlined text-[16px]">arrow_forward</span></div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- ============================ P5 · TIMELINE ============================ -->
+<section class="max-w-7xl mx-auto px-margin-page pb-section-gap relative" id="timeline">
+    <div class="mb-16">
+        <h1 class="text-display-xl-mobile md:text-display-xl font-display-xl italic tracking-tighter mb-4" data-i18n="timeline.title">职业历程</h1>
+        <p class="text-bilingual-sub font-bilingual-sub text-slate-gray" data-i18n="timeline.sub">职业历程时间线</p>
+    </div>
+    <div class="relative pl-8 md:pl-0">
+        <!-- Center Line (desktop) -->
+        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-soft-border -translate-x-1/2">
+            <div class="timeline-line absolute top-0 left-0 w-full bg-onyx-black" style="height: 0%;"></div>
+        </div>
+        <!-- Left Line (mobile) -->
+        <div class="md:hidden absolute left-[15px] top-0 bottom-0 w-px bg-soft-border">
+            <div class="timeline-line absolute top-0 left-0 w-full bg-onyx-black" style="height: 0%;"></div>
+        </div>
+        <!-- Item 1 -->
+        <div class="timeline-item relative flex flex-col md:flex-row justify-between items-center w-full mb-24 opacity-0 translate-y-8 transition-all duration-700 ease-out">
+            <div class="hidden md:block w-5/12 text-right pr-12">
+                <p class="text-label-caps font-label-caps text-slate-gray mb-2">2026.06 - 至今</p>
+                <h3 class="text-headline-md font-headline-md mb-2">全栈开发工程师</h3>
+                <p class="text-body-md font-body-md text-on-surface-variant">负责 PHM 工业设备健康检测平台的告警事件服务与可视化数据接口，并参与振动、声学分析算法与异常库匹配能力建设。</p>
+            </div>
+            <div class="absolute left-[-24px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-onyx-black border-4 border-pure-white z-10 shadow-sm"></div>
+            <div class="w-full md:w-5/12 md:pl-12">
+                <div class="md:hidden mb-4">
+                    <p class="text-label-caps font-label-caps text-slate-gray mb-1">2026.06 - 至今</p>
+                    <h3 class="text-headline-md font-headline-md">全栈开发工程师</h3>
+                </div>
+                <div class="bg-surface-bright rounded-xl p-6 hover-lift border border-soft-border">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-surface-variant rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-onyx-black">hub</span></div>
+                        <span class="font-bold">浙江云音声脑科技有限公司</span>
+                    </div>
+                    <p class="text-body-md font-body-md text-on-surface-variant md:hidden mb-4">负责 PHM 工业设备健康检测平台的告警事件服务与可视化数据接口，并参与振动、声学分析算法与异常库匹配能力建设。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">PHM</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">Spring Boot</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">Vue</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">全栈</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="timeline-item relative flex flex-col md:flex-row-reverse justify-between items-center w-full mb-24 opacity-0 translate-y-8 transition-all duration-700 ease-out delay-100">
+            <div class="hidden md:block w-5/12 text-left pl-12">
+                <p class="text-label-caps font-label-caps text-slate-gray mb-2">2023.06 - 2025.08</p>
+                <h3 class="text-headline-md font-headline-md mb-2">Java 开发工程师</h3>
+                <p class="text-body-md font-body-md text-on-surface-variant">负责 CRM 企业客户关系管理与 BTS 动力蓄电池溯源平台的核心业务开发，主导开票流程集成与性能调优。</p>
+            </div>
+            <div class="absolute left-[-24px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-surface-variant border-4 border-pure-white z-10 shadow-sm"></div>
+            <div class="w-full md:w-5/12 md:pr-12">
+                <div class="md:hidden mb-4">
+                    <p class="text-label-caps font-label-caps text-slate-gray mb-1">2023.06 - 2025.08</p>
+                    <h3 class="text-headline-md font-headline-md">Java 开发工程师</h3>
+                </div>
+                <div class="bg-surface-bright rounded-xl p-6 hover-lift border border-soft-border">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-surface-variant rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-onyx-black">receipt_long</span></div>
+                        <span class="font-bold">上海得逸信息技术有限公司</span>
+                    </div>
+                    <p class="text-body-md font-body-md text-on-surface-variant md:hidden mb-4">负责 CRM 企业客户关系管理与 BTS 动力蓄电池溯源平台的核心业务开发，主导开票流程集成与性能调优。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">CRM</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">BTS</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">Spring Boot</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">SAP 集成</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">Redis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="timeline-item relative flex flex-col md:flex-row justify-between items-center w-full mb-24 opacity-0 translate-y-8 transition-all duration-700 ease-out delay-200">
+            <div class="hidden md:block w-5/12 text-right pr-12">
+                <p class="text-label-caps font-label-caps text-slate-gray mb-2">2022.05 - 2023.05</p>
+                <h3 class="text-headline-md font-headline-md mb-2">Java 开发工程师</h3>
+                <p class="text-body-md font-body-md text-on-surface-variant">负责智慧城市项目的核心业务开发与架构设计，覆盖城市级数据平台与多系统集成。</p>
+            </div>
+            <div class="absolute left-[-24px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-onyx-black border-4 border-pure-white z-10 shadow-sm"></div>
+            <div class="w-full md:w-5/12 md:pl-12">
+                <div class="md:hidden mb-4">
+                    <p class="text-label-caps font-label-caps text-slate-gray mb-1">2022.05 - 2023.05</p>
+                    <h3 class="text-headline-md font-headline-md">Java 开发工程师</h3>
+                </div>
+                <div class="bg-surface-bright rounded-xl p-6 hover-lift border border-soft-border">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-surface-variant rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-onyx-black">battery_full</span></div>
+                        <span class="font-bold">未来智城科技发展有限公司</span>
+                    </div>
+                    <p class="text-body-md font-body-md text-on-surface-variant md:hidden mb-4">负责智慧城市项目的核心业务开发与架构设计，覆盖城市级数据平台与多系统集成。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">智慧城市</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">微服务</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">架构设计</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="timeline-item relative flex flex-col md:flex-row-reverse justify-between items-center w-full mb-24 opacity-0 translate-y-8 transition-all duration-700 ease-out delay-100">
+            <div class="hidden md:block w-5/12 text-left pl-12">
+                <p class="text-label-caps font-label-caps text-slate-gray mb-2">2019.04 - 2022.04</p>
+                <h3 class="text-headline-md font-headline-md mb-2">Java 开发工程师</h3>
+                <p class="text-body-md font-body-md text-on-surface-variant">负责 MES 车间制造管理系统的工单全生命周期架构设计，构建覆盖原材料到成品的全链路双向追溯体系。</p>
+            </div>
+            <div class="absolute left-[-24px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-surface-variant border-4 border-pure-white z-10 shadow-sm"></div>
+            <div class="w-full md:w-5/12 md:pr-12">
+                <div class="md:hidden mb-4">
+                    <p class="text-label-caps font-label-caps text-slate-gray mb-1">2019.04 - 2022.04</p>
+                    <h3 class="text-headline-md font-headline-md">Java 开发工程师</h3>
+                </div>
+                <div class="bg-surface-bright rounded-xl p-6 hover-lift border border-soft-border">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-surface-variant rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-onyx-black">factory</span></div>
+                        <span class="font-bold">增和包装股份有限公司</span>
+                    </div>
+                    <p class="text-body-md font-body-md text-on-surface-variant md:hidden mb-4">负责 MES 车间制造管理系统的工单全生命周期架构设计，构建覆盖原材料到成品的全链路双向追溯体系。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">MES</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">Spring Boot</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">追溯</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">Redis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="timeline-item relative flex flex-col md:flex-row justify-between items-center w-full mb-12 opacity-0 translate-y-8 transition-all duration-700 ease-out delay-200">
+            <div class="hidden md:block w-5/12 text-right pr-12">
+                <p class="text-label-caps font-label-caps text-slate-gray mb-2">2018.06 - 2019.04</p>
+                <h3 class="text-headline-md font-headline-md mb-2">技术顾问</h3>
+                <p class="text-body-md font-body-md text-on-surface-variant">负责 HRM 人力资源管理系统与 ERP 企业资源管理系统的二次开发，基于金蝶 EAS 对接供应链 / 财务 / 生产核心流程。</p>
+            </div>
+            <div class="absolute left-[-24px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-onyx-black border-4 border-pure-white z-10 shadow-sm"></div>
+            <div class="w-full md:w-5/12 md:pl-12">
+                <div class="md:hidden mb-4">
+                    <p class="text-label-caps font-label-caps text-slate-gray mb-1">2018.06 - 2019.04</p>
+                    <h3 class="text-headline-md font-headline-md">技术顾问</h3>
+                </div>
+                <div class="bg-surface-bright rounded-xl p-6 hover-lift border border-soft-border">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-surface-variant rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-onyx-black">integration_instructions</span></div>
+                        <span class="font-bold">金蝶软件（中国）有限公司温州分公司</span>
+                    </div>
+                    <p class="text-body-md font-body-md text-on-surface-variant md:hidden mb-4">负责 HRM 人力资源管理系统与 ERP 企业资源管理系统的二次开发，基于金蝶 EAS 对接供应链 / 财务 / 生产核心流程。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">HRM</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">ERP</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">金蝶 EAS</span>
+                        <span class="bg-surface-variant px-3 py-1 rounded-full text-label-caps font-label-caps text-onyx-black">二次开发</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ P6 · CONTACT ============================ -->
+<section class="max-w-7xl mx-auto px-margin-page pb-section-gap" id="contact">
+    <div class="bg-onyx-black text-pure-white rounded-2xl p-margin-page relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-power-red/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+                <p class="text-bilingual-sub font-bilingual-sub text-surface-variant/60 mb-2" data-i18n="contact.title">联系我</p>
+                <h2 class="text-display-xl-mobile md:text-display-xl font-display-xl tracking-tighter mb-8 leading-tight" data-i18n="contact.h2">一起创造影响力。</h2>
+                <a class="group inline-flex flex-col mb-6" href="mailto:634885720@qq.com">
+                    <span class="text-bilingual-sub font-bilingual-sub text-surface-variant/60 mb-1" data-i18n="contact.email">邮箱</span>
+                    <span class="text-headline-lg font-headline-lg group-hover:text-power-red transition-colors duration-300">634885720@qq.com</span>
+                    <div class="h-1 w-0 bg-power-red group-hover:w-full transition-all duration-500 mt-2"></div>
+                </a>
+                <a class="group inline-flex flex-col mb-12" href="tel:13968922416">
+                    <span class="text-bilingual-sub font-bilingual-sub text-surface-variant/60 mb-1" data-i18n="contact.phone">电话</span>
+                    <span class="text-headline-md font-headline-md group-hover:text-power-red transition-colors duration-300">13968922416</span>
+                    <div class="h-1 w-0 bg-power-red group-hover:w-full transition-all duration-500 mt-2"></div>
+                </a>
+                <div class="flex gap-6">
+                    <a class="w-12 h-12 rounded-full border border-surface-variant/30 flex items-center justify-center hover:bg-pure-white hover:text-onyx-black transition-colors" href="#" aria-label="Website"><span class="material-symbols-outlined">link</span></a>
+                    <a class="w-12 h-12 rounded-full border border-surface-variant/30 flex items-center justify-center hover:bg-pure-white hover:text-onyx-black transition-colors" href="#" aria-label="GitHub"><span class="material-symbols-outlined">code</span></a>
+                </div>
+            </div>
+            <div class="flex flex-col items-start lg:items-end justify-center">
+                <div class="bg-pure-white p-4 rounded-xl mb-4">
+                    <img class="w-48 h-48 object-cover rounded-lg" alt="微信二维码" src="assets/qr.jpg"/>
+                </div>
+                <p class="text-body-md font-body-md text-surface-variant/60" data-i18n="contact.wechat">扫码添加微信</p>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="w-full py-stack-lg bg-onyx-black shadow-2xl">
+    <div class="flex flex-col md:flex-row justify-between items-center px-margin-page gap-stack-md max-w-7xl mx-auto">
+        <div class="text-headline-md font-headline-md font-black text-pure-white">
+            WU.CHENG
+        </div>
+        <div class="text-body-md font-body-md text-surface-variant/60">
+            <span data-i18n="footer.copy">© 2026 吴丞. 精工打造。</span>
+        </div>
+        <div class="flex gap-6">
+            <a class="text-surface-variant/60 hover:text-power-red transition-all text-body-md font-body-md opacity-80 hover:opacity-100" href="#">GitHub</a>
+            <a class="text-surface-variant/60 hover:text-power-red transition-all text-body-md font-body-md opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+            <a class="text-surface-variant/60 hover:text-power-red transition-all text-body-md font-body-md opacity-80 hover:opacity-100" href="#">Source Code</a>
+        </div>
+    </div>
+</footer>
+
+<!-- ============================ P7 · PROJECT DETAIL MODAL ============================ -->
+<div id="project-modal" class="hidden-modal fixed inset-0 z-[100] bg-onyx-black/70 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel modal-scroll relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-pure-white rounded-xl shadow-2xl">
+        <button id="modal-close" class="absolute top-4 right-4 z-30 w-10 h-10 flex items-center justify-center rounded-full bg-onyx-black/80 text-pure-white hover:bg-power-red transition-colors" aria-label="Close">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="relative h-56 sm:h-72 md:h-80 w-full overflow-hidden bg-surface-container-low">
+            <img id="modal-img" class="w-full h-full object-cover" alt=""/>
+            <div class="absolute inset-0 bg-gradient-to-t from-pure-white via-transparent to-transparent"></div>
+        </div>
+        <div class="p-8 sm:p-10">
+            <div id="modal-tags" class="flex flex-wrap gap-2 mb-4"></div>
+            <h2 id="modal-title" class="text-headline-lg font-headline-lg font-black tracking-tight"></h2>
+            <p id="modal-overview" class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl"></p>
+            <!-- Meta grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 my-8 py-6 border-y border-soft-border">
+                <div><p class="text-label-caps font-label-caps text-slate-gray mb-1" data-i18n="card.role">角色</p><p id="modal-role" class="text-body-md font-bold text-onyx-black"></p></div>
+                <div><p class="text-label-caps font-label-caps text-slate-gray mb-1" data-i18n="modal.year">年份</p><p id="modal-year" class="text-body-md font-bold text-onyx-black"></p></div>
+                <div><p class="text-label-caps font-label-caps text-slate-gray mb-1" data-i18n="modal.client">客户</p><p id="modal-client" class="text-body-md font-bold text-onyx-black"></p></div>
+            </div>
+            <!-- Tech stack -->
+            <div class="mb-8">
+                <p class="text-label-caps font-label-caps uppercase tracking-widest text-slate-gray mb-3" data-i18n="modal.tech">技术栈</p>
+                <div id="modal-stack" class="flex flex-wrap gap-2"></div>
+            </div>
+            <!-- Metrics -->
+            <div id="modal-metrics-wrap" class="mb-8">
+                <p class="text-label-caps font-label-caps uppercase tracking-widest text-slate-gray mb-3" data-i18n="modal.impact">成果指标</p>
+                <div id="modal-metrics" class="grid grid-cols-2 sm:grid-cols-3 gap-4"></div>
+            </div>
+            <!-- Achievements -->
+            <div id="modal-achievements-wrap" class="mb-8">
+                <p class="text-label-caps font-label-caps uppercase tracking-widest text-slate-gray mb-3" data-i18n="modal.ach">项目成果</p>
+                <ul id="modal-achievements" class="space-y-3"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+/* ============================================================
+   DATA — P7 project detail (extends Stitch "View Details")
+   ============================================================ */
+const PROJECTS = {
+    phm: {
+        img: "assets/p1.jpg",
+        tags: ["工业 IoT","PHM","微服务"],
+        title: "工业设备健康检测平台 (PHM)",
+        titleEn: "Industrial Equipment PHM Platform",
+        role: "告警服务核心开发者", year: "2026.06 - 至今", client: "浙江云音声脑科技有限公司",
+        overview: "面向工厂设备健康管理的工业 IoT 微服务系统，基于 Spring Cloud 构建，实现产线设备实时数据采集、状态监测与报警处理。作为告警事件服务与大屏可视化接口的核心开发者，深度参与振动、声学分析算法与异常库匹配能力建设，将告警智能关联到故障特征库，实现异常归因与打标，并针对 >3s 的查询瓶颈进行优化，支撑设备实时监测能力。",
+        stack: ["Java 8","Spring Cloud Alibaba","Netty","Redis","RabbitMQ","MySQL","ClickHouse","ShardingSphere"],
+        metrics: [{k:"告警归因",v:"异常库匹配"},{k:"查询瓶颈",v:">3s 优化"},{k:"监测能力",v:"实时采集"}],
+        achievements: [
+            "告警智能关联故障特征库，实现异常自动归因与打标",
+            "优化 >3s 查询瓶颈，保障设备状态实时监测",
+            "打通告警事件服务与大屏可视化数据接口"
+        ]
+    },
+    bts: {
+        img: "assets/p2.jpg",
+        tags: ["溯源","BTS","多租户"],
+        title: "动力蓄电池溯源管理平台 (BTS)",
+        titleEn: "Battery Traceability Platform",
+        role: "重构架构主导", year: "2023.06 - 2025.08", client: "上海得逸信息技术有限公司",
+        overview: "为每块动力电池建立唯一“数字身份证”，覆盖原材料、生产、使用、返修、梯次利用到回收拆解的全流程溯源。主导单体架构重构与性能调优，将核心查询从 5s+ 降至毫秒级，效率提升 500%，并实现多租户化、多工厂代码统一管理，对每日 30W+ 增长数据做冷热隔离与分库分表。",
+        stack: ["Spring Boot","MySQL","Redis","RabbitMQ","分库分表","多租户"],
+        metrics: [{k:"查询耗时",v:"5s→毫秒"},{k:"效率提升",v:"+500%"},{k:"日增数据",v:"30W+"}],
+        achievements: [
+            "核心查询从 5s+ 降至毫秒级，效率提升 500%",
+            "实现多租户化与多工厂代码统一管理",
+            "对每日 30W+ 增长数据做冷热隔离与分库分表"
+        ]
+    },
+    crm: {
+        img: "assets/p3.jpg",
+        tags: ["CRM","开票","SAP 集成"],
+        title: "企业客户关系管理系统 (CRM)",
+        titleEn: "Enterprise CRM System",
+        role: "核心开票业务主导", year: "2023.06 - 2025.08", client: "上海得逸信息技术有限公司",
+        overview: "面向企业销售全流程的客户关系管理系统，覆盖从价格、物流到增值税发票开具，并与 SAP 自动对账。主导核心开票业务编码，统一销售订单开票入口，集成 SAP / OA / VAT / EAS / WMS 多方系统，将核心查询从 15s+ 降至 1s 内，整体效率提升 15 倍。",
+        stack: ["Spring Boot","MySQL","Redis","SAP","OA","VAT","EAS","WMS"],
+        metrics: [{k:"查询耗时",v:"15s→1s 内"},{k:"效率提升",v:"+15x"},{k:"集成系统",v:"5+"}],
+        achievements: [
+            "核心查询从 15s+ 降至 1s 内，整体效率提升 15 倍",
+            "统一销售订单开票入口，集成 SAP / OA / VAT / EAS / WMS 五方系统",
+            "实现增值税发票自动开具并与 SAP 自动对账"
+        ]
+    },
+    mes: {
+        img: "assets/p4.jpg",
+        tags: ["MES","制造","追溯"],
+        title: "车间制造管理系统 (MES)",
+        titleEn: "Manufacturing Execution System",
+        role: "工单架构主导", year: "2019.04 - 2022.04", client: "增和包装股份有限公司",
+        overview: "为印刷包装企业打造的数字化工厂核心平台，打通订单下达到交付的全制造流程。主导工单全生命周期状态机设计（创建 / 下发 / 启动 / 暂停 / 完工 / 报废），并构建覆盖原材料到成品的全链路双向追溯体系（批次号关联 BOM / 设备 / 操作员 / 质检），利用 Redis 缓存热点追溯数据，将追溯分析从 4 小时压缩至 5 分钟。",
+        stack: ["Spring Boot","Redis","ERP/PLC 集成","RESTful API"],
+        metrics: [{k:"准时完工率",v:"+25%"},{k:"统计效率",v:"+90%"},{k:"追溯分析",v:"4h→5min"}],
+        achievements: [
+            "追溯分析从 4 小时压缩至 5 分钟",
+            "准时完工率提升 25%，统计效率提升 90%",
+            "构建覆盖原材料到成品的全链路双向追溯体系"
+        ]
+    },
+    hrs: {
+        img: "assets/p5.jpg",
+        tags: ["HRS","人力资源","二次开发"],
+        title: "企业人力资源管理系统 (HRS)",
+        titleEn: "HR Management System",
+        role: "核心模块主导", year: "2018.06 - 2019.04", client: "金蝶软件（中国）有限公司温州分公司",
+        overview: "为 50000+ 员工的大型企业构建综合人力资源系统，替换原有 Excel 与多套分散老系统，集成核心人力、组织、考勤、薪酬、绩效、招聘等模块。深入业务梳理百余项需求，对标准化 SHR 系统进行深度二次开发，将月度薪酬核算从 5 人/天 降至 1 人/天。",
+        stack: ["SHR 标准系统","Spring Boot","二次开发","数据迁移"],
+        metrics: [{k:"薪酬核算",v:"5→1 人/天"},{k:"流程",v:"全链路自动化"},{k:"员工规模",v:"50000+"}],
+        achievements: [
+            "月度薪酬核算从 5 人/天 降至 1 人/天",
+            "替换 Excel 与多套分散老系统，集成六大 HR 模块",
+            "对标准化 SHR 系统深度二次开发，落地百余项业务需求"
+        ]
+    },
+    erp: {
+        img: "assets/p6.jpg",
+        tags: ["ERP","金蝶 EAS","二次开发"],
+        title: "ERP 管理系统",
+        titleEn: "ERP System",
+        role: "二次开发主导", year: "2018.06 - 2019.04", client: "金蝶软件（中国）有限公司温州分公司",
+        overview: "基于金蝶 EAS 进行二次开发，优化集团供应链、财务、生产制造核心流程。主导销售订单协同接口与新功能模块开发，打通 EAS 与 WMS 深度集成，消除信息孤岛，实现核心业务数据统一闭环管理。",
+        stack: ["金蝶 EAS","Java","Spring","WMS 集成","二次开发"],
+        metrics: [{k:"系统集成",v:"WMS/MES/OA"},{k:"数据",v:"统一闭环"},{k:"模式",v:"敏捷开发"}],
+        achievements: [
+            "打通 EAS 与 WMS 深度集成，消除信息孤岛",
+            "实现核心业务数据统一闭环管理",
+            "主导销售订单协同接口与新功能模块开发"
+        ]
+    }
+};
+
+/* ============================================================
+   i18n — ZH / EN toggle (drives .bi emphasis + UI strings)
+   ============================================================ */
+const I18N = {
+    "btn.build": { en: "Let's Build", zh: "一起构建" },
+    "nav.about": { en: "About", zh: "关于" },
+    "nav.skills": { en: "Skills", zh: "技能" },
+    "nav.projects": { en: "Projects", zh: "项目" },
+    "nav.timeline": { en: "Timeline", zh: "历程" },
+    "nav.contact": { en: "Contact", zh: "联系" },
+    "card.role": { en: "Role", zh: "角色" },
+    "card.view": { en: "View Details", zh: "查看详情" },
+    "about.tag1": { en: "JAVA BACKEND", zh: "Java 后端" },
+    "about.tag2": { en: "SYSTEM ARCHITECTURE", zh: "系统架构" },
+    "about.tag3": { en: "HIGH CONCURRENCY", zh: "高并发" },
+    "hero.status": { en: "AVAILABLE FOR WORK", zh: "随时待命" },
+    "hero.role": { en: "SENIOR JAVA ENGINEER", zh: "高级 Java 工程师" },
+    "hero.subtitle": { en: "Senior Java Engineer · 8 Years", zh: "高级 Java 开发工程师 · 8 年经验" },
+    "hero.cta": { en: "EXPLORE PROJECTS", zh: "查看项目" },
+    "intro.title": { en: "Built for Impact.", zh: "为影响力而生。" },
+    "modal.role": { en: "Role", zh: "角色" },
+    "modal.year": { en: "Year", zh: "年份" },
+    "modal.client": { en: "Client", zh: "客户" },
+    "modal.tech": { en: "Tech Stack", zh: "技术栈" },
+    "modal.impact": { en: "Impact", zh: "成果指标" },
+    "modal.ach": { en: "Achievements", zh: "项目成果" },
+    "timeline.title": { en: "Milestones", zh: "职业历程" },
+    "timeline.sub": { en: "Career Timeline", zh: "职业历程时间线" },
+    "projects.title": { en: "Selected Works", zh: "精选项目" },
+    "projects.intro": { en: "A curated collection of engineered interfaces and robust systems.", zh: "精选项目展示：工程化界面与稳健系统" },
+    "contact.title": { en: "Get in touch", zh: "联系我" },
+    "contact.h2": { en: "Let's create impact.", zh: "一起创造影响力。" },
+    "contact.email": { en: "Email", zh: "邮箱" },
+    "contact.phone": { en: "Phone", zh: "电话" },
+    "contact.wechat": { en: "Scan to connect on WeChat", zh: "扫码添加微信" },
+    "footer.copy": { en: "© 2026 Wu Cheng. Engineered with precision.", zh: "© 2026 吴丞. 精工打造。" }
+};
+let currentModalKey = null;
+const prefersZh = localStorage.getItem("lang") !== "en";
+function syncModalLang() {
+    if (!currentModalKey) return;
+    const p = PROJECTS[currentModalKey];
+    if (!p) return;
+    document.getElementById('modal-title').textContent = zh() ? p.title : (p.titleEn || p.title);
+    document.getElementById('modal-overview').textContent = p.overview;
+}
+function applyLang(zh) {
+    document.documentElement.classList.toggle("lang-zh", zh);
+    document.documentElement.classList.toggle("lang-en", !zh);
+    document.documentElement.lang = zh ? "zh" : "en";
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (I18N[key]) el.textContent = zh ? I18N[key].zh : I18N[key].en;
+    });
+    // mobile menu links
+    document.querySelectorAll(".mobile-link").forEach((el, i) => {
+        const keys = ["nav.about","nav.skills","nav.projects","nav.timeline","nav.contact"];
+        if (I18N[keys[i]]) el.textContent = zh ? I18N[keys[i]].zh : I18N[keys[i]].en;
+    });
+    // project card titles
+    document.querySelectorAll(".project-card").forEach(card => {
+        const p = PROJECTS[card.getAttribute("data-project")];
+        if (p) { const h = card.querySelector("h2"); if (h) h.textContent = zh ? p.title : (p.titleEn || p.title); }
+    });
+    const lbl = zh ? "EN / ZH" : "ZH / EN";
+    const ll = document.getElementById("lang-label"); if (ll) ll.textContent = lbl;
+    const llm = document.getElementById("lang-label-m"); if (llm) llm.textContent = lbl;
+    localStorage.setItem("lang", zh ? "zh" : "en");
+    syncModalLang();
+}
+
+function toggleLang() {
+    const zh = !document.documentElement.classList.contains("lang-zh");
+    applyLang(zh);
+}
+document.getElementById("lang-toggle").addEventListener("click", toggleLang);
+document.getElementById("lang-toggle-m").addEventListener("click", toggleLang);
+
+/* ============================================================
+   Mobile menu
+   ============================================================ */
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+function closeMenu() { mobileMenu.classList.add("hidden-menu"); }
+menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden-menu"));
+document.querySelectorAll(".mobile-link").forEach(l => l.addEventListener("click", closeMenu));
+
+/* ============================================================
+   Smooth anchor scrolling + close mobile menu
+   ============================================================ */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener("click", e => {
+        const id = a.getAttribute("href");
+        if (id === "#") { e.preventDefault(); }
+        else if (id.length > 1) {
+            const target = document.querySelector(id);
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: "smooth" }); }
+        }
+        closeMenu();
+    });
+});
+
+/* ============================================================
+   Scrollspy — active nav link (red underline, per Stitch)
+   ============================================================ */
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = ['about','skills','projects','timeline','contact']
+    .map(id => document.getElementById(id)).filter(Boolean);
+const spy = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.id;
+            navLinks.forEach(l => {
+                const active = l.getAttribute('data-nav') === id;
+                l.classList.toggle('text-primary', active);
+                l.classList.toggle('text-on-surface-variant', !active);
+                l.classList.toggle('border-b-2', active);
+                l.classList.toggle('border-secondary', active);
+                l.classList.toggle('font-bold', active);
+            });
+        }
+    });
+}, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+sections.forEach(s => spy.observe(s));
+
+/* ============================================================
+   Hero tilt (replicated from Stitch)
+   ============================================================ */
+const tiltCard = document.getElementById('hero-tilt');
+if (tiltCard && window.matchMedia("(hover: hover)").matches) {
+    document.addEventListener('mousemove', (e) => {
+        const rect = tiltCard.getBoundingClientRect();
+        if (e.clientX > rect.left - 200 && e.clientX < rect.right + 200 && e.clientY > rect.top - 200 && e.clientY < rect.bottom + 200) {
+            const centerX = rect.width / 2, centerY = rect.height / 2;
+            const rotateX = ((e.clientY - rect.top - centerY) / centerY) * -5;
+            const rotateY = ((e.clientX - rect.left - centerX) / centerX) * 5;
+            tiltCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        } else {
+            tiltCard.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
+        }
+    });
+    tiltCard.addEventListener('mouseleave', () => { tiltCard.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`; });
+}
+
+/* ============================================================
+   Scroll reveal (reveal-up) + skill progress bars
+   ============================================================ */
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            if (entry.target.id === 'skills' || entry.target.querySelector('.skill-progress')) {
+                entry.target.querySelectorAll('.skill-progress').forEach(bar => {
+                    setTimeout(() => { bar.style.width = bar.getAttribute('data-width'); }, 300);
+                });
+            }
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { root: null, rootMargin: '0px', threshold: 0.15 });
+document.querySelectorAll('.reveal-up').forEach(el => revealObserver.observe(el));
+
+/* ============================================================
+   Timeline reveal + scroll-driven progress line
+   ============================================================ */
+const timelineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0', 'translate-y-8');
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+        }
+    });
+}, { threshold: 0.2 });
+document.querySelectorAll('.timeline-item').forEach(item => timelineObserver.observe(item));
+
+const timelineSection = document.getElementById('timeline');
+const timelineLines = document.querySelectorAll('.timeline-line');
+window.addEventListener('scroll', () => {
+    if (!timelineSection) return;
+    const rect = timelineSection.getBoundingClientRect();
+    const wh = window.innerHeight;
+    let progress = 0;
+    if (rect.top < wh / 2) {
+        progress = Math.min(100, Math.max(0, ((wh / 2 - rect.top) / rect.height) * 100));
+    }
+    timelineLines.forEach(line => line.style.height = `${progress}%`);
+}, { passive: true });
+
+/* ============================================================
+   P7 Modal open / close
+   ============================================================ */
+const modal = document.getElementById('project-modal');
+const modalClose = document.getElementById('modal-close');
+const zh = () => document.documentElement.classList.contains('lang-zh');
+
+function openModal(key) {
+    const p = PROJECTS[key];
+    if (!p) return;
+    currentModalKey = key;
+    document.getElementById('modal-img').src = p.img;
+    document.getElementById('modal-title').textContent = zh() ? p.title : (p.titleEn || p.title);
+    document.getElementById('modal-overview').textContent = p.overview;
+    document.getElementById('modal-role').textContent = p.role;
+    document.getElementById('modal-year').textContent = p.year;
+    document.getElementById('modal-client').textContent = p.client;
+
+    document.getElementById('modal-tags').innerHTML = p.tags.map(t =>
+        `<span class="bg-surface-container text-onyx-black px-3 py-1 rounded-full text-[10px] font-label-caps uppercase tracking-wider">${t}</span>`).join('');
+
+    document.getElementById('modal-stack').innerHTML = p.stack.map(t =>
+        `<span class="bg-surface-container-low border border-soft-border text-onyx-black px-3 py-1.5 rounded-full text-bilingual-sub font-bilingual-sub">${t}</span>`).join('');
+
+    const mWrap = document.getElementById('modal-metrics-wrap');
+    if (p.metrics && p.metrics.length) {
+        mWrap.style.display = '';
+        document.getElementById('modal-metrics').innerHTML = p.metrics.map(m =>
+            `<div class="bg-surface-container-low rounded-xl p-4"><p class="text-label-caps font-label-caps text-slate-gray mb-1">${m.k}</p><p class="text-headline-md font-headline-md text-power-red">${m.v}</p></div>`).join('');
+    } else { mWrap.style.display = 'none'; }
+
+    const aWrap = document.getElementById('modal-achievements-wrap');
+    if (p.achievements && p.achievements.length) {
+        aWrap.style.display = '';
+        document.getElementById('modal-achievements').innerHTML = p.achievements.map(a =>
+            `<li class="flex items-start gap-2 text-body-md font-body-md text-on-surface-variant"><span class="material-symbols-outlined text-power-red text-[18px] mt-0.5 shrink-0">check_circle</span><span>${a}</span></li>`).join('');
+    } else { aWrap.style.display = 'none'; }
+
+    modal.classList.remove('hidden-modal');
+    document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+    modal.classList.add('hidden-modal');
+    document.body.style.overflow = '';
+}
+document.querySelectorAll('[data-project]').forEach(card => {
+    card.addEventListener('click', () => openModal(card.getAttribute('data-project')));
+});
+modalClose.addEventListener('click', closeModal);
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.classList.contains('hidden-modal')) closeModal(); });
+
+/* Initial language apply (after modal is defined) */
+applyLang(prefersZh);
+</script>
+</body>
+</html>

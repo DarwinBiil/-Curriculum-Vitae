@@ -1,0 +1,5 @@
+# 备份、工作副本、水印图（非最终发布资源，不进版本库）
+assets/*-old.*
+assets/*-gen.*
+assets/*-wm.*
+assets/qr.png
